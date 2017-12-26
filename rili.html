@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;list-style: none;}
+			#box{
+				width:350px;margin:50px auto;border:1px solid #ccc;
+			}
+			#btn,#title{
+				height:45px;line-height: 45px;text-align: center;
+			}
+			ul{width:100%;display: flex;flex-wrap:nowrap ;}
+			ul>li{width:50px;float:left;text-align: center;height: 45px;line-height: 45px;border: 1px solid #ccc;}
+			span{display:inline-block;width:50px;height: 30px;line-height: 30px;text-align: center;}
+			span.benMonth{background: salmon ;}
+
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="btn">
+				<button>上一年</button>
+				<button>上一月</button>
+				<button>下一月</button>
+				<button>下一年</button>
+			</div>
+			<div id="title">
+				年月日
+			</div>
+			<ul>
+				<li>周日</li>
+				<li>周一</li>
+				<li>周二</li>
+				<li>周三</li>
+				<li>周四</li>
+				<li>周五</li>
+				<li>周六</li>
+			</ul>
+			<div id="content">
+
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script src='js/jQuery.date.js'></script>
+		<script>
+
+			$.Date({
+				control:'button',
+				title:'#title',
+				box:'#box',
+				table:'table',
+                bg:'on',
+			})
+		</script>
+	</body>
+</html>

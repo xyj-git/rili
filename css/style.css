@@ -1,0 +1,86 @@
+*{margin:0;padding:0;}
+a{text-decoration:none;}
+ul,ol{list-style:none;}
+
+
+article,body,html{
+	width: 100%;height: 100%
+}
+
+article{
+	display: flex;
+	flex-direction:column;
+	font-family:'幼圆';
+	background: #eee;
+}
+h4{
+	height: 1.5rem;
+	line-height: 1.8rem;
+	font-size: 0.7rem;
+	font-weight: 400;
+	text-indent: 1rem;
+	color:#999;
+}
+header{
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	display:flex;
+	text-align: center;
+	border-bottom:1px solid #ccc;
+	background: #fff;
+}
+header a{
+	flex: 1;
+	color: #49e;
+}
+header b{
+	flex:4;
+}
+
+
+main{
+	flex:1;
+	overflow: hidden;
+	overflow-y:auto;
+}
+main table{
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+	background: #fff;
+	border-top:1px solid #ccc;
+}
+thead tr:nth-child(1){
+	height: 2rem;
+	line-height: 2rem;
+	font-size: 0.8rem;
+}
+thead tr:nth-child(2){
+	height: 1.5rem;
+	line-height: 1.5rem;
+	font-size: 0.6rem;
+	color:#999;
+	border-top:1px solid #ccc;
+	border-bottom:0.1rem solid #49e;
+}
+thead a{
+	color: #49e;
+}
+tbody td{
+	height: 2rem;
+	border:1px solid #ccc;
+	font-size: 0.7rem;
+}
+
+.over{
+	color:#aaa;
+}
+.prev{
+	background-color:#f0f0f0;
+	color:#ccc;
+}
+.on{
+	background: #49e;
+	color:#fff;
+}
